@@ -21,9 +21,12 @@
 
     <title>Curso de Bootstrap</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="57">
     <!-- Header -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav
+      id="header"
+      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="./assets/images/platzi-logo.png" alt="platzi-logo" />
@@ -34,27 +37,29 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-target="#navbar"
+          aria-controls="navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">La Conferencia</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#main">La Conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los Oradores</a>
+              <a class="nav-link" href="#speakers">Los Oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">El lugar y la Fecha</a>
+              <a class="nav-link" href="#place-time">El lugar y la Fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviértete en orador</a>
+              <a class="nav-link" href="#conviertete-en-orador"
+                >Conviértete en orador</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-platzi" href="#">Comprar Tickets</a>
